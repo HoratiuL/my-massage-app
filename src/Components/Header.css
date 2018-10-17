@@ -1,0 +1,27 @@
+.myheader {
+  background: greenyellow;
+  display: flex;
+  /* justify-content: space-around; */
+  height: 10vh;
+  align-items: center;
+  /* flex: 1; */
+}
+
+.myheader .hd-title {
+  /* maring-left:  */
+  font-size: 1.7vmax;
+  margin-left: 5%;
+  /* flex: 1; */
+}
+
+.myheader button {
+  /* flex: 1; */
+  /* justify-items: space-around; */
+  font-size: 1vmax;
+  margin-right: 4%;
+}
+
+.myheader .hd-home {
+  margin-left: auto;
+  justify-content: flex-start;
+}

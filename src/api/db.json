@@ -1,0 +1,39 @@
+{
+  "mycards": [
+    {
+      "title": "lady on brown table",
+      "poster": "images/6f210661a2541b486e298f5e6a9a8efa.jpg",
+      "id": "001"
+    },
+    {
+      "title": "lady holding legs",
+      "poster": "images/9b6611e97c8b046ddacc9e6b43a22d19.jpg",
+      "id": "002"
+    },
+    {
+      "title": "lady with candles on table",
+      "poster": "images/446f41717ae2ecc23e1990e45a3b9e90.jpg",
+      "id": "003"
+    }
+  ],
+  "mymassages": [
+    {
+      "title": "Masaj relaxare",
+      "jobDescription": "Descrierea masajului",
+      "poster": "images/massage1.jpg",
+      "id": 4
+    },
+    {
+      "title": "Masaj miere",
+      "jobDescription": "Descrierea masajului",
+      "poster": "images/849607_3deef61303b445f6a4b09f6.jpg",
+      "id": 5
+    },
+    {
+      "title": "Masaj cranian",
+      "jobDescription": "Descrierea masajului",
+      "poster": "images/massage1_d145_full.jpg",
+      "id": 6
+    }
+  ]
+}
