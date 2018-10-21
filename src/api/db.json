@@ -21,19 +21,22 @@
       "title": "Masaj relaxare",
       "jobDescription": "Descrierea masajului",
       "poster": "images/massage1.jpg",
-      "id": 4
+      "id": 4,
+      "active": ""
     },
     {
       "title": "Masaj miere",
       "jobDescription": "Descrierea masajului",
       "poster": "images/849607_3deef61303b445f6a4b09f6.jpg",
-      "id": 5
+      "id": 5,
+      "active": ""
     },
     {
       "title": "Masaj cranian",
       "jobDescription": "Descrierea masajului",
       "poster": "images/massage1_d145_full.jpg",
-      "id": 6
+      "id": 6,
+      "active": ""
     }
   ]
 }

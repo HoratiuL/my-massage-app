@@ -1,29 +1,15 @@
 import React, { Component } from "react";
-import { Label, Accordion, Image } from "semantic-ui-react";
-import CardMedia from "@material-ui/core/CardMedia";
-
-import ServiciiList from "./ServiciiList";
+import { Accordion } from "semantic-ui-react";
 import ServiciiImg from "./ServiciiImg";
+import "./Servicii.css";
 
 class Servicii extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      expanded: false,
-      mymassages: [],
       activeIndex: 0
     };
   }
-
-  // expandPanel = id => {
-  //   console.log("click 1");
-
-  //   this.expandPanel(id).then(expanded => {
-  //     const { mymassages } = this.state;
-  //     const filtered = mymassages.filter(m => m.id !== id);
-  //     this.setState({ mymassages: filtered });
-  //   });
-  // };
 
   // expandPanel = (id, expanded) => {
   //   // event.preventDefault();
@@ -44,41 +30,45 @@ class Servicii extends Component {
   };
 
   render() {
-    const { mymassages } = this.props;
+    const { mymassages = [] } = this.props;
+    const { activeIndex } = this.state;
 
-    let panels = mymassages.map(item => ({
-      title: {
-        content: <Label content={item.title} />,
-        key: `title-${item.id}`
-      },
-      content: {
-        content: <p> {item.jobDescription} </p>,
-        key: `content-${item.id}`
-      },
-      key: `${item.id}`,
+    const panels = mymassages.map(item => ({
+      title: `${item.title}`,
+      content: `${item.jobDescription}`,
+      image: `${item.poster}`,
+      id: `${item.id}`,
+      key: `key-${item.id}`,
       imageUrl: `${item.poster}`
     }));
 
-    const { activeIndex } = this.state;
-    const { image } = this.props;
-
     return (
-      <div>
-        {/* <ServiciiImg /> */}
-        {/* {mymassages.map(info => (
-          <ServiciiList
-            expandPanel={this.expandPanel}
-            key={info.id}
-            title={info.title}
-            descr={info.jobDescription}
-          />
-        ))} */}
+      <div className="serv-container">
         <Accordion
           activeIndex={activeIndex}
           panels={panels}
           onTitleClick={this.handleTitleClick}
+          className="serv-list"
         />
-        <Image component="img" src={image} />
+
+        {mymassages.map((item, index) => {
+          const val = this.state.activeIndex === index ? `${item.poster}` : {};
+          return (
+            <ServiciiImg
+              activeIndex={activeIndex}
+              imageUrl={val}
+              className="serv-img"
+            />
+          );
+        })}
+
+        {/* {mymassages
+          .filter(val => {
+            return val.active === true;
+          })
+          .map(val => {
+            return <p>{val.title}</p>;
+          })} */}
       </div>
     );
   }

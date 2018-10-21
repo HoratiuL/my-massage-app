@@ -1,0 +1,15 @@
+.serv-container {
+  display: flex;
+  flex: 1;
+  background: #eee;
+}
+
+.serv-list {
+  width: 40%;
+  margin: 20px 0 0 50px;
+}
+
+.serv-img {
+  width: 50%;
+  height: auto;
+}
