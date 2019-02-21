@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Accordion } from "semantic-ui-react";
+import { Accordion, Image } from "semantic-ui-react";
 import ServiciiImg from "./ServiciiImg";
 import "./Servicii.css";
 
@@ -7,7 +7,8 @@ class Servicii extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeIndex: 0
+      activeIndex: 0,
+      image: ""
     };
   }
 
@@ -29,6 +30,15 @@ class Servicii extends Component {
     this.setState({ activeIndex: newIndex });
   };
 
+  // setImage = item => {
+  //   this.children.props.mymassages
+  //     .filter((active, index) => {
+  //       active == "true";
+  //     })
+  //     .then(this.setState({ image: {} }));
+  //   console.log("true");
+  // };
+
   render() {
     const { mymassages = [] } = this.props;
     const { activeIndex } = this.state;
@@ -49,26 +59,22 @@ class Servicii extends Component {
           panels={panels}
           onTitleClick={this.handleTitleClick}
           className="serv-list"
+          onClick={this.setImage}
         />
+        {/* <Image src={image} /> */}
 
         {mymassages.map((item, index) => {
-          const val = this.state.activeIndex === index ? `${item.poster}` : {};
+          const val =
+            this.state.activeIndex === index ? `${item.poster}` : null;
           return (
             <ServiciiImg
+              key={index}
               activeIndex={activeIndex}
               imageUrl={val}
-              className="serv-img"
+              // className="serv-img img-fluid rounded img-thumbnail"
             />
           );
         })}
-
-        {/* {mymassages
-          .filter(val => {
-            return val.active === true;
-          })
-          .map(val => {
-            return <p>{val.title}</p>;
-          })} */}
       </div>
     );
   }

@@ -1,45 +1,35 @@
 .card-container {
   display: flex;
-  flex: 1;
-  flex-wrap: wrap;
   background: #eee;
-  /* height: 100%; */
-  box-sizing: border-box;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+.card-item {
+  flex: 1 1 33%;
+  position: relative;
+  /* align-self: center; */
 }
 .card-img {
-  /* align-content: center; */
-  position: relative;
-  width: 250px;
-  /* display: flex; */
-  /* flex: 1; */
-  /* object-fit: cover; */
-  /* margin: auto; */
-  /* width: 100%; */
+  padding: 0.6%;
   /* height: auto; */
+  /* max-height: 290px; Acesta niveleaza zona pentru ca toate img sa fie la fel ca inaltime */
+  /* width: auto; */
+  /* max-width: 350px; */
+  /* object-fit: fill; */
 }
-
-.card-item {
-  padding: 1%;
-  flex: 1;
-  position: relative;
-  flex-wrap: wrap;
-  height: 25%;
-  align-self: center;
-  /* background: #eee; */
-}
-
 .card-item:hover {
   /* box-shadow: 10px 10px 5px grey; */
   transform: scale(1.03, 1.03);
 }
 .card-text {
-  /* margin: auto; */
   bottom: 1%;
-  left: 15%;
-  /* right: 50%; */
-  /* text-align: center; */
+  width: 100%;
+  text-align: center;
   font-style: oblique;
-  font-size: 2vw;
-  color: darkcyan;
+  font-size: 2vw !important;
+  color: darkcyan !important;
   position: absolute;
 }

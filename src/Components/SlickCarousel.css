@@ -1,0 +1,16 @@
+.slick-slide h4 {
+  position: absolute;
+  /* bottom: 0; */
+  /* font-size: 1.5vw; */
+  margin: 0;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.slick-slide {
+  position: relative;
+}
+
+.slick-track {
+  /* opacity: 0.8; */
+}

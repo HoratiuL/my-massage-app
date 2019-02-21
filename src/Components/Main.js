@@ -1,6 +1,6 @@
 import React from "react";
-// import MainCard from "./MainCard";
-import MainCardT from "./MainCard.1";
+import MainCard from "./MainCard";
+// import MainCardT from "./MainCard.1";
 import "./Main.css";
 
 function Main(props) {
@@ -8,12 +8,12 @@ function Main(props) {
 
   return (
     <div className="card-container">
-      {/* {mycards.map(cards => (
-        <MainCard key={cards.id} imageUrl={cards.poster} title={cards.title} />
-      ))} */}
       {mycards.map(cards => (
-        <MainCardT key={cards.id} imageUrl={cards.poster} title={cards.title} />
+        <MainCard key={cards.id} imageUrl={cards.poster} title={cards.title} />
       ))}
+      {/* {mycards.map(cards => (
+        <MainCardT key={cards.id} imageUrl={cards.poster} title={cards.title} />
+      ))} */}
     </div>
   );
 }

@@ -1,15 +1,38 @@
 .serv-container {
+  position: relative;
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   background: #eee;
+  flex-wrap: nowrap;
+  box-sizing: content-box;
+  height: 600px;
+  /* flex: 1 100%; */
+  align-content: stretch;
 }
 
 .serv-list {
-  width: 40%;
-  margin: 20px 0 0 50px;
+  /* width: 40%; */
+  /* margin: 20px 0 0 50px; */
+  flex: 1 1 450px;
+  padding: 15px 25px;
+  width: 40vw;
+  height: auto;
 }
 
 .serv-img {
-  width: 50%;
-  height: auto;
+  /* position: absolute; */
+  /* width: auto; */
+  /* flex: 1 2 650px; */
+  /* height: 300px; */
+  /* background-size: cover; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* max-height: 300px; */
+  width: 40vw;
+  /* height: auto; */
 }
+
+/* .img-fluid {
+  max-width: 100%;
+  height: auto;
+} */
