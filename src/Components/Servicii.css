@@ -5,16 +5,16 @@
   background: #eee;
   flex-wrap: nowrap;
   box-sizing: content-box;
-  height: 600px;
+  /* height: 600px; */
   /* flex: 1 100%; */
-  align-content: stretch;
+  justify-content: space-between;
 }
 
 .serv-list {
   /* width: 40%; */
   /* margin: 20px 0 0 50px; */
   flex: 1 1 450px;
-  padding: 15px 25px;
+  padding: 15px 35px;
   width: 40vw;
   height: auto;
 }
@@ -30,6 +30,8 @@
   /* max-height: 300px; */
   width: 40vw;
   /* height: auto; */
+  left: 0;
+  /* align-self: flex-end; */
 }
 
 /* .img-fluid {

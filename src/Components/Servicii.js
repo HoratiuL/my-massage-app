@@ -12,16 +12,6 @@ class Servicii extends Component {
     };
   }
 
-  // expandPanel = (id, expanded) => {
-  //   // event.preventDefault();
-  //   // const mymassages = this.state;
-  //   const newState = this.state.mymassages.id !== expanded ? expanded : false;
-  //   this.setState({
-  //     id: newState
-  //   });
-  //   console.log("test");
-  // };
-
   handleTitleClick = (e, itemProps) => {
     const { index } = itemProps;
     const { activeIndex } = this.state;
@@ -29,15 +19,6 @@ class Servicii extends Component {
 
     this.setState({ activeIndex: newIndex });
   };
-
-  // setImage = item => {
-  //   this.children.props.mymassages
-  //     .filter((active, index) => {
-  //       active == "true";
-  //     })
-  //     .then(this.setState({ image: {} }));
-  //   console.log("true");
-  // };
 
   render() {
     const { mymassages = [] } = this.props;
@@ -53,12 +34,12 @@ class Servicii extends Component {
     }));
 
     return (
-      <div className="serv-container">
+      <div className="serv-container row">
         <Accordion
           activeIndex={activeIndex}
           panels={panels}
           onTitleClick={this.handleTitleClick}
-          className="serv-list"
+          className="serv-list col-lg-3"
           onClick={this.setImage}
         />
         {/* <Image src={image} /> */}

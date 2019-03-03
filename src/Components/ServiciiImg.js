@@ -8,7 +8,7 @@ const ServiciiImg = props => {
     <div>
       <CardMedia
         component="img"
-        className="serv-img img-fluid rounded img-thumbnail"
+        className="serv-img img-fluid rounded col-lg-9"
         image={imageUrl}
         // active={activeIndex}
       />

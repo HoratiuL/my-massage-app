@@ -1,0 +1,21 @@
+/* .MuiTypography-root-41 .MuiTypography-subheading-48 {
+  width: 50% !important;
+  background: green;
+}
+
+.MuiCardMedia-root-106 .MuiCardMedia-media-107 {
+  width: 50%;
+  background: green;
+} */
+
+.panel-text {
+  width: 50%;
+  color: whitesmoke !important;
+}
+.card-img {
+  width: 50% !important;
+}
+
+.panel-bck {
+  background: #3f51b5;
+}
