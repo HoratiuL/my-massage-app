@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <AppBar>
         <Toolbar>
-          <Typography variant="H2" color="inherit">
+          <Typography variant="headline" color="inherit">
             Blissful massage
           </Typography>
         </Toolbar>

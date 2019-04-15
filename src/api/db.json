@@ -18,12 +18,12 @@
     {
       "title": "lady head massage",
       "poster": "images/massage-600x400.jpg",
-      "id": "003"
+      "id": "004"
     },
     {
       "title": "lady simply blissful",
       "poster": "images/fb-massage.jpg",
-      "id": "003"
+      "id": "005"
     }
   ],
   "mymassages": [
@@ -45,6 +45,13 @@
       "title": "Masaj cranian",
       "jobDescription": "Descrierea masajului craniosacral",
       "poster": "images/massage-600x400.jpg",
+      "id": 16,
+      "active": ""
+    },
+    {
+      "title": "Masaj osteopat",
+      "jobDescription": "Descrierea masajului osteopat",
+      "poster": "images/chiropractic-1-600x400.jpg",
       "id": 16,
       "active": ""
     }

@@ -21,17 +21,17 @@ class SlickCarousel extends Component {
   render() {
     const { slides } = this.state;
     const settings = {
-      className: "center",
+      className: "center container",
       centerMode: true,
       infinite: true,
-      width: "550px",
+      // width: "350px",
       autoplay: true,
       display: true,
       centerPadding: "-0px",
       // lazyLoad: true,
       slidesToShow: 3,
       speed: 5000
-      //   fade: true
+      // fade: true
     };
     return (
       <Slider {...settings}>

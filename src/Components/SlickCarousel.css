@@ -7,10 +7,17 @@
   left: 50%;
   transform: translate(-50%);
 }
+
 .slick-slide {
   position: relative;
+  /* margin: 5px; */
 }
 
 .slick-track {
   /* opacity: 0.8; */
+  margin-top: 10%;
+}
+
+.slick-prev {
+  height: 30px;
 }

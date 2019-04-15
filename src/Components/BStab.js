@@ -12,8 +12,7 @@ import {
   TabContainer,
   TabContent
 } from "react-bootstrap";
-import { Paper } from "@material-ui/core";
-import Bootstrap from "bootstrap/dist/css/bootstrap.css";
+// import Bootstrap from "bootstrap/dist/css/bootstrap.css";
 
 class BStab extends Component {
   constructor(props) {
@@ -87,13 +86,18 @@ class BStab extends Component {
           activeKey={this.state.key}
           defaultActiveKey={this.handleDefault}
           onSelect={this.handleTab}
-          className="nav nav-pills nav-stacked nav-justified"
+          className="nav nav-pills nav-stacked nav-justified container border-bottom-0"
+          style={{ marginTop: "35px" }}
         >
           {mymassages.map(item => (
-            <Tab eventKey={item.title} title={item.title} className="">
+            <Tab
+              eventKey={item.title}
+              title={item.title}
+              className="container "
+            >
               <Row>
                 <Col sm={6}>
-                  <Paper> {item.jobDescription}</Paper>
+                  <h3> {item.jobDescription}</h3>
                 </Col>
                 <Col sm={6}>
                   <Image
