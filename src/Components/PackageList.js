@@ -80,16 +80,13 @@ function PackageList() {
           <ExpansionPanel
             expanded={expanded === item}
             onChange={handleChange(item)}
-            className="container"
+            className=""
           >
-            <ExpansionPanelSummary
-              className="container"
-              expandIcon={<ExpandMoreIcon />}
-            >
+            <ExpansionPanelSummary className="" expandIcon={<ExpandMoreIcon />}>
               <Typography variant="headline">{item.title}</Typography>
             </ExpansionPanelSummary>
-            <ExpansionPanelDetails className="panel-bck container">
-              <Typography variant="subheading" className="panel-text container">
+            <ExpansionPanelDetails className="panel-bck ">
+              <Typography variant="subheading" className="panel-text">
                 {item.jobDescription}
               </Typography>
               <CardMedia
@@ -97,10 +94,10 @@ function PackageList() {
                 alt=""
                 image={item.poster}
                 title={item.title}
-                style={{
-                  alignItems: "flex-end"
-                }}
-                className="card-img"
+                // style={{
+                //   alignItems: "flex-end"
+                // }}
+                className="card-img "
               />
             </ExpansionPanelDetails>
           </ExpansionPanel>

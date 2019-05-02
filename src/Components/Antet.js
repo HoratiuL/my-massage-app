@@ -8,6 +8,7 @@ const AntetCard = ({ title, about }) => {
         // Outer
         borderRadius: "50%",
         maxWidth: "20%",
+        height: "100%",
         boxShadow: " -1px 2px 49px 14px rgba(224,36,224,1)"
       }}
     >
@@ -17,9 +18,11 @@ const AntetCard = ({ title, about }) => {
           display: "flex",
           flexDirection: "column",
           justifyItems: "center",
+          alignItems: "stretch",
           borderRadius: "50%",
           paddingTop: "20px",
-
+          // height: "auto",
+          paddingBottom: "20%",
           // maxWidth: "20%",
           boxShadow: " inset -1px 2px 49px 30px rgba(224,36,224,1)"
         }}
@@ -27,7 +30,10 @@ const AntetCard = ({ title, about }) => {
         <Typography align="center" variant="headline">
           {title}
         </Typography>
-        <img src="./images/Picture1.png" style={{ width: "250px" }} />
+        <img
+          src="./images/Picture1.png"
+          style={{ width: "20vw", margin: "auto" }}
+        />
         <Typography
           align="center"
           style={{ display: "flex", wordWrap: "normal" }}
@@ -44,7 +50,7 @@ function Antet() {
     {
       title: "Accesibil",
       about:
-        "Text here Text here Text here Text here Text here Text here Text here Text here"
+        "Text here Text here Abc def Text here Text here Abc def  Text here Text here Abc def  Text here Text here"
     },
     {
       title: "Variat",

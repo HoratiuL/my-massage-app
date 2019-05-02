@@ -1,17 +1,5 @@
 import React, { Component } from "react";
-import {
-  Tabs,
-  Nav,
-  Col,
-  Row,
-  Tab,
-  NavItem,
-  Image,
-  NavLink,
-  TabPane,
-  TabContainer,
-  TabContent
-} from "react-bootstrap";
+import { Tabs, Col, Row, Tab, NavItem, Image } from "react-bootstrap";
 // import Bootstrap from "bootstrap/dist/css/bootstrap.css";
 
 class BStab extends Component {
@@ -29,14 +17,14 @@ class BStab extends Component {
     this.setState({ activeEventKey: eventKey });
   };
 
-  handlePanelActive = (e, item) => {
-    const { index } = item;
-    const { activeKey } = this.state;
-    const newIndex = activeKey === index ? -1 : index;
-    console.log("here");
-    this.setState({ activeKey: newIndex });
-    console.log("after");
-  };
+  // handlePanelActive = (e, item) => {
+  //   const { index } = item;
+  //   const { activeKey } = this.state;
+  //   const newIndex = activeKey === index ? -1 : index;
+  //   console.log("here");
+  //   this.setState({ activeKey: newIndex });
+  //   console.log("after");
+  // };
 
   handleDefault = () => {
     <img alt="" src="./images/massage1.jpg" />;
